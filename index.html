@@ -13,71 +13,89 @@
 body{
 margin:0;
 font-family:Segoe UI, Arial;
-background:#f4f6f9;
+background:#f5f7fb;
 color:#333;
 }
 
 header{
-background:#0f1c3f;
+background:linear-gradient(135deg,#0f1c3f,#1e3c72);
 color:white;
-padding:60px 20px;
+padding:70px 20px;
 text-align:center;
 }
 
 .logo{
-width:140px;
+width:150px;
 margin-bottom:20px;
 }
 
 header h1{
+font-size:46px;
 margin:0;
-font-size:42px;
 }
 
 header p{
-margin-top:10px;
-opacity:0.85;
+font-size:18px;
+opacity:0.9;
 }
 
 .container{
-max-width:1100px;
+max-width:1200px;
 margin:auto;
-padding:50px 20px;
+padding:60px 20px;
+}
+
+.section-title{
+text-align:center;
+font-size:30px;
+margin-bottom:40px;
 }
 
 .description{
-max-width:800px;
+max-width:850px;
 margin:auto;
 text-align:center;
-line-height:1.6;
+line-height:1.7;
 color:#555;
-margin-bottom:50px;
+margin-bottom:60px;
+font-size:17px;
 }
 
 .cards{
 display:flex;
 flex-wrap:wrap;
-gap:30px;
+gap:35px;
 justify-content:center;
 }
 
 .card{
 background:white;
-border-radius:10px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-padding:30px;
-width:300px;
+border-radius:12px;
+box-shadow:0 15px 35px rgba(0,0,0,0.08);
+padding:35px;
+width:320px;
 text-align:center;
+transition:0.25s;
+}
+
+.card:hover{
+transform:translateY(-6px);
 }
 
 .card h3{
 margin-top:0;
+font-size:22px;
+}
+
+.card p{
+color:#666;
+font-size:15px;
 }
 
 .btn{
 display:block;
-margin-top:12px;
-padding:12px;
+margin-top:14px;
+padding:13px;
 background:#2d7ff9;
 color:white;
 text-decoration:none;
@@ -86,7 +104,7 @@ font-weight:bold;
 }
 
 .btn:hover{
-background:#1a5fd1;
+background:#1c5ed6;
 }
 
 .manual{
@@ -97,11 +115,28 @@ background:#6c757d;
 background:#545b62;
 }
 
+.solutions{
+display:flex;
+flex-wrap:wrap;
+gap:40px;
+justify-content:center;
+margin-top:30px;
+}
+
+.solution{
+width:260px;
+text-align:center;
+}
+
+.solution h4{
+margin-bottom:8px;
+}
+
 footer{
-margin-top:60px;
+margin-top:70px;
 background:#111;
 color:#aaa;
-padding:25px;
+padding:30px;
 text-align:center;
 font-size:14px;
 }
@@ -118,7 +153,7 @@ font-size:14px;
 
 <h1>GWS Automatización</h1>
 
-<p>Software y soluciones para automatización industrial</p>
+<p>Software y soluciones tecnológicas para automatización industrial</p>
 
 </header>
 
@@ -127,23 +162,27 @@ font-size:14px;
 <div class="description">
 
 <p>
-GWS desarrolla soluciones de software orientadas a la automatización industrial,
-la integración de procesos y el control de operaciones en planta.
+GWS desarrolla herramientas de software orientadas a la automatización industrial,
+la integración de sistemas y la optimización de procesos productivos.
 </p>
 
 <p>
-Nuestros sistemas están diseñados para simplificar la implementación de tecnologías
-en entornos productivos, integrando hardware y software de forma práctica,
-escalable y eficiente.
+Nuestras soluciones están diseñadas para facilitar la implementación de tecnologías
+en planta, permitiendo integrar hardware industrial, captura de datos y control
+operativo en sistemas simples, robustos y escalables.
 </p>
 
 </div>
+
+<h2 class="section-title">Software de Demostración</h2>
 
 <div class="cards">
 
 <div class="card">
 
-<h3>RFID Demo</h3>
+<h3>Sistema RFID</h3>
+
+<p>Gestión de tarjetas RFID para control e integración con procesos industriales.</p>
 
 <a class="btn" href="https://drive.google.com/uc?export=download&id=17KBcaSGuqkpGxwlyPLHEoJTn8dW4EgTq">
 ⬇ Descargar Demo
@@ -157,7 +196,9 @@ escalable y eficiente.
 
 <div class="card">
 
-<h3>GPI Demo</h3>
+<h3>Sistema GPI</h3>
+
+<p>Interfaz de entradas industriales para monitoreo e integración de señales.</p>
 
 <a class="btn" href="https://drive.google.com/uc?export=download&id=18OLmTYf-pwJoO3yWELRQ8HLUGtUwRIxA">
 ⬇ Descargar Demo
@@ -171,7 +212,9 @@ escalable y eficiente.
 
 <div class="card">
 
-<h3>Sistema Depósito Demo</h3>
+<h3>Sistema Depósito</h3>
+
+<p>Gestión de movimientos y control operativo para sistemas de almacenamiento.</p>
 
 <a class="btn" href="https://drive.google.com/uc?export=download&id=1eVMC-IvR5qzXIcwR6xwM2EJ5e6egUpdz">
 ⬇ Descargar Demo
@@ -194,5 +237,4 @@ escalable y eficiente.
 </footer>
 
 </body>
-
 </html>
